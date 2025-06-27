@@ -1,0 +1,119 @@
+** start of beginning.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <head>
+  <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please complete the following survey</p>
+    <form id="survey-form">
+    <div>  
+    <fieldset>
+      <legend>Basic Info</legend>  
+      <label id="name-label" class="basicInfo">Name: <input id="name" type="text" placeholder="James Rodinson" class="basicInfo" required></label>
+      <label id="email-label" class="basicInfo">Email: <input id="email" type="email" placeholder="jamesrodinson@outlook.com" class="basicInfo" required></label>
+      <label id="number-label" class="basicInfo">Age: <input id="number" type="number" min="15" max="120" placeholder="25" class="basicInfo" required></label>
+      </fieldset>
+      
+    </div>
+    <div> 
+      <fieldset>
+        <legend>Specialization</legend> 
+      <label class="advInfo"id="dropdown-label">What is your specialization (Select one)
+        <select id="dropdown">
+          <option id="soft-dev">Software Developer</option>
+          <option id="graphic-design">Graphic Designer</option>
+          <option id="back-end-dev">Back End Developer</option>
+          <option id="web-dev">Web Developer</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset>
+      <label class="advInfo">Would you recommend our website to others?
+        <label>Yes<input type="radio" id="radio-option-yes" name="radio-options" value="yes">
+        </label>
+        <label>No<input type="radio" id="radio-option-no" name="radio-options" value="no">
+        </label> 
+        <label>Maybe<input type="radio" id="radio-option-maybe" name="radio-options" value="maybe">
+        </label>  
+
+      </label>
+      <label class="advInfo">How did you know about us?
+        <label><input type="checkbox" id="ads" value="ads-chkbx">Advertisement</label>
+        <label><input type="checkbox" id="ads" value="user-chkbx">Another user</label>
+        <label><input type="checkbox" id="ads" value="youtube-chkbx">Youtube</label>
+
+      </label>
+      <label class="advInfo">Aditional Comments:
+        <textarea id="comments"></textarea>
+      </label>
+    </div>
+    </fieldset>  
+      <button class="advInfo" type="submit" name="Submit" id="submit">Submit</button>
+
+
+      
+        
+    </form>
+  </body>
+    
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+h1, p {
+  text-align:center;
+  }
+  body   {width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+  }
+
+label {
+  margin: 0.5rem 0;
+  display:block;
+}
+form {
+  width: 65vw;
+  max-width: 500px;
+  min-width: 200px;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+.basicInfo {
+  margin-top:2px;
+  margin-bottom:10px;
+}
+.advInfo {
+  padding:8px;
+}
+
+fieldset {
+  width:100%;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color:white;
+}
+input,
+textarea,
+select {
+  
+  width: 100%;
+  min-height: 0.2em;
+}
+
+** end of styles.css **
+
