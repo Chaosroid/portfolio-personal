@@ -1,0 +1,71 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <title>Juan Pablo Duarte Tribute</title>
+     <meta charset="utf-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   <main id="main">
+     <h1 id="title"> Tribute to Juan Pablo Duarte</h1>
+     <p class="subtitle"> Padre de la patria, Father of Independence</p>
+     <figure id="img-div">
+       <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Juan_pablo_duarte_diez.jpg" alt="Juan pablo duarte diez.jpg"/>
+      <figcaption id="img-caption"> An oil painting of Juan Pablo Duarte made by Dominican artist <a target="_blank" href="https://en.wikipedia.org/wiki/Abelardo_Rodr%C3%ADguez_Urdaneta">Abelardo Rodríguez Urdaneta</a></figcaption> 
+     </figure>
+
+    <section id="tribute-info">
+     <h2>About</h2>
+     <p> Juan Pablo Duarte was a Dominican military leader, writer, activist, and nationalist politician who was the foremost of the Founding Fathers of the Dominican Republic and bears the title of Father of the Nation. As one of the most celebrated figures in Dominican history, Duarte is considered a folk hero and revolutionary visionary in the modern Dominican Republic, who along with military generals Ramón Matías Mella and Francisco del Rosario Sánchez, organized and promoted La Trinitaria, a secret society that eventually led to the Dominican revolt and independence from Haitian rule in 1844 and the start of the Dominican War of Independence.
+     </p>    
+    </section>   
+    <section>
+     <p> For more information: <a id="tribute-link" href="https://en.wikipedia.org/wiki/Juan_Pablo_Duarte" target="_blank">Juan Pablo Duarte at Wikipedia</a>
+    </section>  
+
+   </main>
+  </body>
+  
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  margin:0;
+  padding:"20px";
+  background:#f9f9f9;
+  color:#333;
+  font-family: Arial, sans-serif;
+  text-align:center;
+}
+
+main {
+  max-width:800px;
+  margin:auto;
+  background: #fff;
+  padding:20px;
+  border-radius:12px;
+}
+
+img {
+  display:block;
+  width: 80%;
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+  border-radius:10px;
+  padding:0 0 20px 0;
+}
+figcaption {
+  font-style:italic;
+  font-size:0.9rem
+}
+
+** end of styles.css **
+
