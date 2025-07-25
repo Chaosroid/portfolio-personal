@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Getting_Started">Getting Started</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile programming language used to create interactive websites.</p>
+      <p>It runs in the browser and allows dynamic content changes.</p>
+      <p>It can also be used on the server side via Node.js.</p>
+      <p>JavaScript is one of the core technologies of the web.</p>
+      <p>It supports object-oriented, imperative, and functional styles.</p>
+    </section>
+
+    <section class="main-section" id="Getting_Started">
+      <header>Getting Started</header>
+      <p>To get started, you just need a text editor and a browser.</p>
+      <p>You can include JavaScript directly in an HTML file using the <code>&lt;script&gt;</code> tag.</p>
+      <pre><code>&lt;script&gt;
+  alert("Hello World!");
+&lt;/script&gt;
+</code></pre>
+      <p>Modern browsers have built-in developer tools for testing JavaScript.</p>
+    </section>
+
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <p>You can declare variables using <code>let</code>, <code>const</code>, or <code>var</code>.</p>
+      <ul>
+        <li><code>let</code> is block-scoped and reassignable.</li>
+        <li><code>const</code> is block-scoped and not reassignable.</li>
+        <li><code>var</code> is function-scoped (legacy).</li>
+      </ul>
+      <p>Common data types include:</p>
+      <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Object</li>
+        <li>Array</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are reusable blocks of code that perform a task.</p>
+      <pre><code>function greet(name) {
+  return "Hello " + name;
+}</code></pre>
+      <p>You can call a function by its name followed by parentheses.</p>
+      <p>Functions can accept parameters and return values.</p>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops are used to repeat code multiple times.</p>
+      <ul>
+        <li><code>for</code> loop</li>
+        <li><code>while</code> loop</li>
+        <li><code>do...while</code> loop</li>
+      </ul>
+      <pre><code>for (let i = 0; i &lt; 5; i++) {
+  console.log(i);
+}</code></pre>
+      <p>Loops help when you need to iterate over data structures like arrays.</p>
+    </section>
+  </main>
+</body>
+</html>
+
+CSS Styles Basic
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: auto;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+}
+
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+#main-doc {
+  margin-left: 260px;
+  padding: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+code {
+  font-family: Consolas, monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
